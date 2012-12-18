@@ -37,6 +37,7 @@
 		6A50C1E71680E16F00DC412F /* spork.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A50C1D91680E16F00DC412F /* spork.png */; };
 		6A50C1E81680E16F00DC412F /* sporkers.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A50C1DA1680E16F00DC412F /* sporkers.png */; };
 		6A50C1E91680E16F00DC412F /* sporklist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A50C1DB1680E16F00DC412F /* sporklist.png */; };
+		6A50C1F11680E61E00DC412F /* SINewsFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A50C1F01680E61E00DC412F /* SINewsFeedCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		6A50C1D91680E16F00DC412F /* spork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spork.png; path = Images/spork.png; sourceTree = "<group>"; };
 		6A50C1DA1680E16F00DC412F /* sporkers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sporkers.png; path = Images/sporkers.png; sourceTree = "<group>"; };
 		6A50C1DB1680E16F00DC412F /* sporklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sporklist.png; path = Images/sporklist.png; sourceTree = "<group>"; };
+		6A50C1EF1680E61E00DC412F /* SINewsFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINewsFeedCell.h; sourceTree = "<group>"; };
+		6A50C1F01680E61E00DC412F /* SINewsFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINewsFeedCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				6A50C14E1680DCDD00DC412F /* SIAppDelegate.h */,
 				6A50C14F1680DCDD00DC412F /* SIAppDelegate.m */,
 				6A50C1571680DCDD00DC412F /* MainStoryboard.storyboard */,
+				6A50C1EF1680E61E00DC412F /* SINewsFeedCell.h */,
+				6A50C1F01680E61E00DC412F /* SINewsFeedCell.m */,
 				6A50C15A1680DCDD00DC412F /* SIViewController.h */,
 				6A50C15B1680DCDD00DC412F /* SIViewController.m */,
 				6A50C1461680DCDD00DC412F /* Supporting Files */,
@@ -330,6 +335,7 @@
 				6A50C14C1680DCDD00DC412F /* main.m in Sources */,
 				6A50C1501680DCDD00DC412F /* SIAppDelegate.m in Sources */,
 				6A50C15C1680DCDD00DC412F /* SIViewController.m in Sources */,
+				6A50C1F11680E61E00DC412F /* SINewsFeedCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,15 +41,93 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="204" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rwp-mF-vOL">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="393" id="fcF-7k-fZJ"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="204" id="5UC-2l-NoP" customClass="SINewsFeedCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="gHH-1O-pVU">
+                                                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="115" id="BGH-Y6-Q7R"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="115" type="user" id="CYb-4m-BX1"/>
+                                                        <constraint firstAttribute="width" constant="280" type="user" id="Uc5-9x-OsG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHO-Jb-l87">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" type="user" id="25n-QM-IW6"/>
+                                                        <constraint firstAttribute="width" constant="40" type="user" id="DUZ-6I-BOj"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" type="user" id="tlh-I8-bgW"/>
+                                                        <constraint firstAttribute="height" constant="40" type="user" id="vGd-fQ-ApA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="&lt;first> &lt;last> had &lt;dish name> at &lt;restaurant>" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="177" translatesAutoresizingMaskIntoConstraints="NO" id="Rsx-Bg-FPV">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" type="user" id="RBL-l2-anz"/>
+                                                        <constraint firstAttribute="width" constant="177" type="user" id="aCW-cO-I0M"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" image="spork.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kj-ro-GdF">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" type="user" id="5zt-G8-jiV"/>
+                                                        <constraint firstAttribute="width" constant="16" type="user" id="guL-va-8oT"/>
+                                                        <constraint firstAttribute="height" constant="40" type="user" id="xeD-kR-a6E"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" image="hungry.png" translatesAutoresizingMaskIntoConstraints="NO" id="tPp-b0-zU2">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" type="user" id="03Q-Zp-z2K"/>
+                                                        <constraint firstAttribute="width" constant="23" type="user" id="Sy0-2a-oL2"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" type="user" id="W1r-gM-ssV"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="SHO-Jb-l87" firstAttribute="leading" secondItem="5UC-2l-NoP" secondAttribute="leading" constant="20" type="user" id="0ao-BN-1zL"/>
+                                            <constraint firstItem="tPp-b0-zU2" firstAttribute="bottom" secondItem="8kj-ro-GdF" secondAttribute="bottom" type="user" id="DRz-yr-5kf"/>
+                                            <constraint firstItem="Rsx-Bg-FPV" firstAttribute="leading" secondItem="SHO-Jb-l87" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="O1D-fj-hpB"/>
+                                            <constraint firstItem="tPp-b0-zU2" firstAttribute="leading" secondItem="Rsx-Bg-FPV" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="OT4-my-HeR"/>
+                                            <constraint firstItem="tPp-b0-zU2" firstAttribute="bottom" secondItem="Rsx-Bg-FPV" secondAttribute="bottom" type="user" id="RmI-Lx-Qzc"/>
+                                            <constraint firstAttribute="trailing" secondItem="8kj-ro-GdF" secondAttribute="trailing" constant="20" type="user" id="V8G-ZJ-cqS"/>
+                                            <constraint firstAttribute="trailing" secondItem="gHH-1O-pVU" secondAttribute="trailing" constant="20" type="user" id="bLJ-Rw-pbl"/>
+                                            <constraint firstItem="tPp-b0-zU2" firstAttribute="top" secondItem="gHH-1O-pVU" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="fY2-en-QLd"/>
+                                            <constraint firstItem="SHO-Jb-l87" firstAttribute="top" secondItem="gHH-1O-pVU" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="ide-Mw-je9"/>
+                                            <constraint firstItem="8kj-ro-GdF" firstAttribute="leading" secondItem="tPp-b0-zU2" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="jZM-De-GTa"/>
+                                            <constraint firstItem="gHH-1O-pVU" firstAttribute="leading" secondItem="5UC-2l-NoP" secondAttribute="leading" constant="20" type="user" id="onj-uX-L4h"/>
+                                            <constraint firstItem="8kj-ro-GdF" firstAttribute="top" secondItem="gHH-1O-pVU" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="qKK-E8-huY"/>
+                                            <constraint firstItem="gHH-1O-pVU" firstAttribute="top" secondItem="5UC-2l-NoP" secondAttribute="top" constant="20" type="default" id="rUn-Rd-ozI"/>
+                                            <constraint firstItem="SHO-Jb-l87" firstAttribute="bottom" secondItem="Rsx-Bg-FPV" secondAttribute="bottom" type="user" id="vCJ-K0-Rzk"/>
+                                            <constraint firstItem="Rsx-Bg-FPV" firstAttribute="top" secondItem="gHH-1O-pVU" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="zsn-XJ-a7e"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TqX-Uz-JSU" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="1bG-ea-4av"/>
                             <constraint firstItem="FQi-eY-7wC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="DoU-gE-bja"/>
+                            <constraint firstItem="Rwp-mF-vOL" firstAttribute="bottom" secondItem="FQi-eY-7wC" secondAttribute="top" type="default" id="Q7d-t8-nMo"/>
                             <constraint firstItem="TqX-Uz-JSU" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="QWH-eS-9jm"/>
                             <constraint firstItem="FQi-eY-7wC" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Z0o-Kb-eTC"/>
                             <constraint firstItem="TqX-Uz-JSU" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="awP-yO-vk2"/>
+                            <constraint firstItem="Rwp-mF-vOL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="f6N-6I-QTr"/>
                             <constraint firstItem="FQi-eY-7wC" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="kqQ-pC-PbG"/>
+                            <constraint firstItem="Rwp-mF-vOL" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="v7W-95-3hC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -65,15 +143,8 @@
         <image name="logo.png" width="200" height="37"/>
         <image name="news-feed.png" width="48" height="48"/>
         <image name="search.png" width="48" height="48"/>
+        <image name="spork.png" width="48" height="48"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SIViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
