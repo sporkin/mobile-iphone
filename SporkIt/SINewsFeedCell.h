@@ -10,4 +10,8 @@
 
 @interface SINewsFeedCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
+@property (weak, nonatomic) IBOutlet UIImageView *userImage;
+@property (weak, nonatomic) IBOutlet UILabel *description;
+
 @end
